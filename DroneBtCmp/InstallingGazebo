@@ -1,0 +1,15 @@
+$ gazebo --version
+
+$ gazebo
+
+$ sudo apt-get install ros-melodic-husky-simulator 
+
+$ export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.gazebo.xacro
+
+$ roslaunch husky_gazebo husky_playpen.launch
+
+$ git clone https://github.com/ros-teleop/teleop_twist_keyboard.git
+$ cd ..
+$ catkin_make
+$ source devel/setup.bash
+
